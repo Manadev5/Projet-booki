@@ -1,0 +1,788 @@
+html{
+   line-height: 1.15;
+   -webkit-text-size-adjust: 100%;
+}
+html, body{
+    width: 100%;
+   
+}
+body{
+   margin: 0px;
+   font-family: Raleway;
+   padding: 0px;
+   box-sizing: content-box;
+}
+
+p{
+   font-size: 16px;
+}
+
+h1, h2, h3{
+   font-size: 22px;
+   font-weight: 700;
+}
+
+ header img{
+    width:61.09px;
+    height: 19px;
+    padding-top: 44px;
+ }
+
+ nav a{
+   text-decoration: none;
+   color: black;
+   padding-top: 41px;
+}
+
+nav ul{ 
+   margin-top: 0px;
+   list-style-type: none;
+}
+
+nav li{
+   margin-left: 67px;
+   height: 40px;
+   padding-top: 44px;
+}
+
+ nav a:hover{
+   color: #0065FC;
+   border-top: 2px solid #0065FC;
+ 
+ }
+ /*positionnement des éléments du header sur la page et definition des marges*/ 
+nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items:flex-start;
+   margin-left: 55px;
+   margin-bottom: 63px;
+   margin-right: 77px;
+
+}
+ /*placement du liens dans le header*/
+nav ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end
+}
+
+.section-1{
+   margin-left: 55px;
+   margin-right: 50px;
+   margin-bottom: 39px;
+}
+
+i{
+   font-size: 22px;
+   color:#0065FC;
+}
+
+.formulaire{
+   margin-top: 30px;
+   margin-bottom: 0px;
+}
+
+/*modification de logo-loc en ajoutant la bordure*/
+.logo-loc{
+   position: relative;
+   border: 1px solid #F2F2F2;
+   background-color: #F2F2F2;
+   color: black;
+   border-radius: 15px 0px 0px 15px;
+   padding: 10px;
+   width: 50px;
+   z-index: 4;
+
+}
+
+.logo-loc i{
+   color: black;
+}
+
+
+ /*placement du formulaire au milieu du logo et du button avec position*/
+ :required{
+   padding: 14px;
+   width: 332px;
+   position: relative;
+   border-radius: 15px;
+   bottom: 45px;
+   text-align: center;
+   border: 1px solid #F2F2F2;
+   z-index:1;
+   
+}
+
+::placeholder{
+   text-align: center;
+   font-weight: 700;
+   font-size: 18px;
+   color: black;
+   font-family: Raleway;
+}
+
+.recherche{
+   position: relative;
+   bottom: 90px;
+   left:280px;
+   border: 1px solid #0065FC;
+   border-radius: 0px 15px 15px 0px;
+   background-color:#0065FC;
+   padding: 11px;
+   width: 132px;
+   text-align: center;                                          
+   z-index: 3;
+}
+
+.recherche a{
+   text-decoration: none;
+   color: white;
+   font-weight: 700;
+   font-size: 18px;
+}
+
+/*cachement de l'icone dans la version desktop*/
+.recherche i{
+   display: none;
+}
+
+/*etablissement des filtres en horizontal, titre compris*/
+.filtres{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: flex-start;
+   gap: 50px;
+   margin-bottom: 52px;
+  
+}  
+
+/*rangement du filtres sans titre*/
+.buttons{
+   display: flex;
+   flex-direction: row;
+   gap: 50px;
+}
+
+.filtres p{
+   font-size: 18px;
+   font-weight: 700;
+}
+
+
+.filtres .buttons a{
+   font-size: 17px;
+   font-weight: 700;
+   text-decoration: none;
+   color: black;
+   margin-left: 10px;
+}
+
+/*creation de la bordure pour chaque filtres*/
+.filtres div div{
+   border: 2px solid #D9D9D9;
+   border-radius: 25px;
+   padding: 10px;
+}
+
+.filtres div div:hover{
+   background-color: #DEEBFF;
+}
+
+.info{
+   display: flex;
+   flex-direction: row;
+}
+
+/*réalisation de l'élisse autour du buttons i en ajoutant une bordure et avec l'aide du padding*/
+.info i{
+   position: relative;
+   top: 10px;
+   padding-right: 15px;
+   font-size: 14px;
+   border:1px solid #F2F2F2;
+   border-radius: 100%;
+   width: 5px;
+   height: 15px;
+   padding: 7px 11px;
+   margin-right: 11px;
+}
+
+/*changement de la taille pur l'icone étoile*/
+.fa-star{
+ font-size: 12px;
+}
+
+/*positionnement des deux bordures de la section*/
+.photos-hebergement{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap:40px;
+  
+}
+
+.photos-hebergement a{
+   text-decoration: none;
+   color: black;
+   font-weight: 700;
+}
+
+/*modifications du texte contenu dans le cartes*/
+.photos-hebergement a p{
+   font-weight: 200;
+   font-size: 14px;
+   margin: 3%;
+}
+
+.photos-hebergement a p[strong]{
+   font-weight: 700;
+    font-size: 16px;
+}
+
+/* changement de la taille des images dans la premiere bordure*/ 
+.hebergements img {
+   width: 100%;
+   height: 60%;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+   object-fit: cover;
+}
+
+.bordure-photo h2{
+   margin-bottom: 23px;
+}
+
+
+
+.hebergements div{
+   border: 5px solid white;
+   background-color: white;
+   border-radius: 20px;
+   width: 100%;
+   height: 199px;
+   box-shadow: 4px 4px 4px #D9D9D9;
+}
+
+/*établissement de la distance entre las étoiles et la texte */
+.hebergements div span{
+   padding-left: 16px;
+}
+
+ .hebergements div p {
+   margin-top: 5px;
+   margin-bottom: 5px;
+   margin-left: 16px;
+}
+
+/*changement de la couleur pour la derniere étoile*/
+.fa-grey{
+   color: #F2F2F2;
+}
+
+/*rangement des cartes dans la bordure*/
+.hebergements{
+   display: grid;
+   grid-template-columns: 30% 30% 30%;
+   grid-template-rows: 50% 50%;
+   gap: 5%;
+}
+
+.bordure-photo{
+   border: 1px solid #F2F2F2;
+   background-color: #F2F2F2;
+   width: 60%;
+   height: 626px;
+   border-radius: 20px;
+   padding: 30px 30px 0px;
+   position: relative;
+   margin-left: 5%;
+}
+
+.photo-populaires img{
+   width: 50%;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   object-fit: cover;
+ 
+}
+
+/*réalisation de chaque cartes pour la bordure le plus populaire*/
+.photo-populaires .carte-p{
+   display: flex;
+   flex-direction: row;
+   border:5px solid white;
+   background-color: white;
+   border-radius: 20px;
+   width: 80%;
+   height: 144px; 
+   box-shadow: 4px 4px 4px #D9D9D9;
+
+}
+
+/*positionnement du logo à droite du titre*/
+.fa-chart-line{
+   height: 15.75px;
+   width: 18px;
+   position: relative;
+   left: 90%;
+   bottom: 47px;
+  }
+
+/*emplacement du texte et des logos dans le carte*/
+.photo-populaires div div{
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   margin-left: 15px;
+}
+
+
+.populaires h2{
+margin-left: 37px;
+margin-top: 41px;
+}
+
+/*positionnement des cartes dans la bordure*/
+.photo-populaires{
+   display: flex;
+   flex-direction: column;
+   gap: 23px;
+   margin-left: 40px;
+}
+
+.populaires{
+   border: 1px solid #F2F2F2;
+   background-color: #F2F2F2;
+   width: 30%;
+   height: 626px;
+   border-radius: 20px;
+   padding-bottom: 30px;
+   margin-right: 5%;
+}
+
+.carte-p span{
+   margin-top: 30%;
+}
+
+.chambres span{
+   margin-top: 20%;
+}
+
+
+.photos-activites{
+   margin:0% 5%;
+}
+
+.photos-activites h3{
+   margin-top: 60px;
+}
+
+.derniers-photos{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 43px;
+}
+
+.derniers-photos div{
+   border: 0px solid white;
+   width: 25%;
+   height: 445px;
+   border-radius: 20px 20px 20px 20px;
+   box-shadow: 6px 6px 6px #F2F2F2;
+}
+.derniers-photos a {
+   color: black;
+   font-size: 16px;
+   font-weight: 700;
+   margin-top: 7px;
+   text-decoration: none;
+}
+
+.photos-activites img{
+   height: 388.51px;
+   width: 100%;
+   border-radius: 20px 20px 0px 0px;
+   object-fit: cover;
+   
+}
+
+.derniers-photos a p{
+   margin-left: 17px;
+}
+
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+  border: 1px solid #F2F2F2;
+  background-color: #F2F2F2;
+  height: 225px;
+  margin: 105px 50px 0px 50px;
+}
+
+footer ul{
+   list-style-type: none;
+}
+
+footer li{
+   padding-bottom: 20px;
+}
+
+.a-propos{
+   padding-top: 30px;
+}
+
+@media screen and (min-width:768px) and (max-width:991px ) {
+   nav {
+      margin-right: 5%;
+   }
+
+   .recherche{
+      right: 450px;
+   }
+
+   /*changement de la distance entre le filtres et modifications de la taille du texte*/
+   .filtres .buttons{
+      justify-content: space-between;
+      gap: 20px;
+      width: 100%;
+   }
+
+   .filtres .buttons a{
+      font-size: 15px;
+      margin-left: 10px;
+   }
+
+   .buttons i{
+      width: 8%;
+      font-size: 20px;
+   }
+ 
+
+   .photos-hebergement{
+      flex-direction: column;
+   }
+
+   /*changement de la taille pour les cartes de la deuxieme section*/
+   .hebergements{
+      grid-template-columns: 32% 32% 32%;
+      grid-template-rows: 50% 45%;
+      gap: 20px;
+   }
+
+   .hebergements div{
+      width: 90%;
+   }
+   .hebergements img{
+      width: 100%;
+   }
+
+   .bordure-photo{
+     width: 83%;
+     height: 626px;
+   }
+
+   .populaires{
+      width: 90%;
+      height: 278px;
+      margin-left: 5%;
+   }
+
+   .populaires a{
+      width: 34%;
+   }
+
+   .populaires img{
+      width: 50%;
+   }
+
+   .photo-populaires{
+      flex-direction: row;
+      justify-content: center;
+      gap: 5%;
+      margin: 0px 20px;
+   }
+   
+   .photo-populaires p[strong]{
+      font-size: 14px;
+   }
+
+   .photo-populaires p{
+      font-size: 13px;
+   }
+
+   .photo-populaires .carte-p{
+      width:90%;
+   }
+
+   .carte-p span{
+      margin-top: 40%;
+   }
+   /*augmentation de la distance entre les étoiles et le texte*/
+   .chambres span{
+      margin-top: 10%;
+  } 
+
+   /*changement de la position du logo*/
+   .fa-chart-line{
+      bottom: 40px;
+      left: 90%;
+      width:1px;
+   }
+
+   .photos-activites{
+      margin: 0% 5%;
+   }
+  
+
+   .photos-activites img{
+      width: 100%;
+      height: 80%;
+   }
+  
+   .derniers-photos div{
+      
+      height: auto;
+   }
+
+   footer{
+      margin: 10% 5% 0% 5%;
+     }
+}
+
+@media  screen and (max-width: 767px) {
+   /*on enlève la possibilité de scroller horizontalement*/
+   body{
+      overflow-x: hidden;
+   }
+
+   nav{
+      flex-direction: column;
+      margin:0;
+   }
+
+  nav img{
+   margin-left: 45%;
+  }
+  
+  /*ragement des liens de navigations*/
+   nav ul{
+      justify-content: center;
+      padding-left: 0px;
+     width: 100%;
+   }
+
+   nav li{
+      margin-left: 0px;
+      width:50%;
+   }
+
+   nav a{
+      padding-top: 0px;
+      font-size: 16px;
+      border-bottom:3px solid #F2F2F2;
+      padding-bottom: 24px;
+   }
+
+   nav a:hover{
+      border-top: none;
+      border-bottom: 3px solid blue;
+   }
+
+   .lien-1, .lien-2{
+      display:block ;
+     padding-left: 30%;
+   }
+
+   /*rangement de la premiere section*/
+   .section-1{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 5%;
+      width: 90%;
+   }
+   /*changement de la taille du formulaire, pour qu'il prenne toute la place*/
+   .logo-loc{
+      width: 14%;
+   }
+
+   :required{
+      bottom: 45px;
+      width:85%;
+   }
+   
+   .recherche{
+      width: 15%;
+      left: 75%;
+   }
+
+   /*on rend visible le logo et on cache le texte*/
+   .recherche a{
+      display: none;
+   }
+
+   .recherche i{
+      display: block ;
+      color: white;
+   }
+
+   .section-1 h1{
+      text-align: start;
+   }
+   
+   .formulaire{
+      height: 70px;
+   }
+   /*separation du titre des buttons*/
+   .filtres{
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      gap:0px
+   }
+
+   /*modifications de la taille des buttons et des elements à l'interieur*/
+   .filtres div div{
+    width: 100%;
+    height: 40px;
+    padding-top: 25px;
+    border-radius: 40px;
+   }
+
+   .buttons .animaux{
+     width: 105%;
+     height: 40px;
+    padding-top: 19px;
+  }
+
+   .filtres.buttons i{
+   font-size: 15px;
+   }
+   
+
+   .filtres .buttons a{
+      font-size: 16px;
+      margin-left: 0px;
+   }
+ 
+   .buttons .animaux a{
+      margin-left: 0px;
+      font-size: 15px;
+   }
+   
+   /*placement des buttons avec display grid en colonne*/
+   .buttons{
+    display:grid;
+    grid-template-columns: 40% 45%;
+    grid-template-rows: 55px 55px;
+    width: 100%;
+    row-gap: 40px;
+    column-gap: 35px ;
+   }
+
+   .photos-hebergement{
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 0px;
+   }
+
+  /*changement de l'ordre entre les deux bordures contenant les cartes*/
+   .populaires{
+     order: 1;
+     border-radius: 0%;
+     width: 100%;
+   }
+
+   .photo-populaires{
+      width: 85%;
+      margin: 0% 5%;
+   }
+
+   .photo-populaires img{
+      width: 40%;
+   }
+   
+   .chambres span {
+      margin-top: 10%;
+   }
+
+   .photo-populaires .carte-p{
+      width: 100%;
+   }
+
+   .bordure-photo{
+      height: 100%;
+      width: 100%;
+      order:2;
+      background-color: white;
+      border-color: white;
+      padding: 0px;
+      margin-left: 5%;
+   }
+   
+   /*rangement des cartes en colonne et modifications de la taille*/
+   .hebergements{
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+      width:100%;
+   }
+   
+    .hebergements div{
+      width: 85%;
+      margin-bottom: 20px;
+    }
+
+   .photos-activites{
+      margin-left: 8%;
+   }
+
+   h3{
+      width: 40%;
+   }
+   .derniers-photos{
+      flex-direction: column;
+      margin-right: 0px;
+   }
+   
+   .derniers-photos h3{
+      margin: auto;
+   }
+
+   .derniers-photos div{
+      width: 98%;
+      height: 190px;
+   }
+
+   .derniers-photos img{
+      width: 100%;
+      height: 134px;
+
+   }
+
+   /*rangement des éléments du footer*/
+   footer{
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      height: 100%;
+     margin-left: 0px;
+   }
+
+   footer div{
+      margin-bottom: 40px;
+      margin-left: 10%;
+   }
+
+   .a-propos{
+      margin-top: 45px;
+   }
+
+}
