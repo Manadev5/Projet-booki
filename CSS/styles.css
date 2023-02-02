@@ -101,6 +101,8 @@ i{
 
 .logo-loc i{
    color: black;
+   position: relative;
+   left: 20%;
 }
 
 
@@ -617,6 +619,10 @@ footer li{
    /*changement de la taille du formulaire, pour qu'il prenne toute la place*/
    .logo-loc{
       width: 10%;
+   }
+
+   .logo-loc i{
+      left: 30%;
    }
 
    :required{
