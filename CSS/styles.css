@@ -3,13 +3,13 @@ html{
    -webkit-text-size-adjust: 100%;
 }
 
-html, body{
+html{
     max-width: 1400px;
    
 }
 
 body{
-   margin: 0px;
+   margin-left: 10%;
    font-family: Raleway;
    padding: 0px;
    box-sizing: content-box;
@@ -24,19 +24,23 @@ h1, h2, h3{
    font-weight: 700;
 }
 
- header img{
+header img{
+
     width:61.09px;
     height: 19px;
     padding-top: 44px;
- }
+}
 
- nav a{
+nav a{
+
    text-decoration: none;
    color: black;
    padding-top: 41px;
+
 }
 
 nav a:hover{
+
    color: #0065FC;
    border-top: 2px solid #0065FC;
 }
@@ -57,7 +61,7 @@ nav {
    margin-right: 77px;
 
 }
- /*placement du liens dans le header*/
+ /*placement des liens dans le header*/
 nav ul{
    display: flex;
    flex-direction: row;
@@ -194,13 +198,13 @@ i{
 }
 
 /*creation de la bordure pour chaque filtres*/
-.filtres div div{
+.buttons div {
    border: 2px solid #D9D9D9;
    border-radius: 25px;
    padding: 10px;
 }
 
-.filtres div div:hover{
+.buttons div :hover{
    background-color: #DEEBFF;
 }
 
@@ -213,7 +217,6 @@ i{
 .info i{
    position: relative;
    top: 10px;
-   padding-right: 15px;
    font-size: 14px;
    border:1px solid #F2F2F2;
    border-radius: 100%;
@@ -244,7 +247,7 @@ i{
 }
 
 /*modifications du texte contenu dans le cartes*/
-.photos-hebergement a p{
+.photos-hebergement p{
    font-weight: 200;
    font-size: 14px;
    margin: 3%;
@@ -253,6 +256,14 @@ i{
 .photos-hebergement a p[strong]{
    font-weight: 700;
     font-size: 16px;
+}
+
+/*rangement des cartes dans la bordure*/
+.hebergements{
+   display: grid;
+   grid-template-columns: 30% 30% 30%;
+   grid-template-rows: 50% 50%;
+   gap: 5%;
 }
 
 /* changement de la taille des images dans la premiere bordure*/ 
@@ -268,8 +279,6 @@ i{
    margin-bottom: 23px;
 }
 
-
-
 .hebergements div{
    border: 5px solid white;
    background-color: white;
@@ -280,11 +289,11 @@ i{
 }
 
 /*établissement de la distance entre las étoiles et la texte */
-.hebergements div span{
+.hebergements span{
    padding-left: 16px;
 }
 
- .hebergements div p {
+ .hebergements p {
    margin-top: 5px;
    margin-bottom: 5px;
    margin-left: 16px;
@@ -293,14 +302,6 @@ i{
 /*changement de la couleur pour la derniere étoile*/
 .fa-grey{
    color: #F2F2F2;
-}
-
-/*rangement des cartes dans la bordure*/
-.hebergements{
-   display: grid;
-   grid-template-columns: 30% 30% 30%;
-   grid-template-rows: 50% 50%;
-   gap: 5%;
 }
 
 .bordure-photo{
@@ -314,6 +315,21 @@ i{
    margin-left: 5%;
 }
 
+.populaires{
+   border: 1px solid #F2F2F2;
+   background-color: #F2F2F2;
+   width: 30%;
+   height: 626px;
+   border-radius: 20px;
+   padding-bottom: 30px;
+   margin-right: 5%;
+}
+
+.populaires h2{
+margin-left: 37px;
+margin-top: 41px;
+}
+
 .photo-populaires img{
    width: 50%;
    border-top-left-radius: 20px;
@@ -323,7 +339,7 @@ i{
 }
 
 /*réalisation de chaque cartes pour la bordure le plus populaire*/
-.photo-populaires .carte-p{
+ .carte-p{
    display: flex;
    flex-direction: row;
    border:5px solid white;
@@ -345,18 +361,13 @@ i{
   }
 
 /*emplacement du texte et des logos dans le carte*/
-.photo-populaires div div{
+.carte-p div{
    display: flex;
    flex-direction: column;
    height: 100%;
    margin-left: 15px;
 }
 
-
-.populaires h2{
-margin-left: 37px;
-margin-top: 41px;
-}
 
 /*positionnement des cartes dans la bordure*/
 .photo-populaires{
@@ -366,15 +377,7 @@ margin-top: 41px;
    margin-left: 40px;
 }
 
-.populaires{
-   border: 1px solid #F2F2F2;
-   background-color: #F2F2F2;
-   width: 30%;
-   height: 626px;
-   border-radius: 20px;
-   padding-bottom: 30px;
-   margin-right: 5%;
-}
+
 
 .carte-p span{
    margin-top: 30%;
@@ -454,6 +457,7 @@ footer li{
 @media screen and (min-width:768px) and (max-width:991px ) {
    body{
       width: 100%;
+      margin-left: 0;
    }
    nav {
       margin-right: 5%;
@@ -577,6 +581,7 @@ footer li{
    body{
       width: 100%;
       overflow-x: hidden;
+      margin-left: 0;
    }
 
    nav{
